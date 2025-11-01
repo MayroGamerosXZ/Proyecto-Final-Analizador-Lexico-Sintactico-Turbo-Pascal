@@ -146,7 +146,8 @@ Ideal para fines educativos, depuración de gramáticas o validación de program
   END.
 
 
-
+```
+```
   PROGRAM SalidaMultiple;
   VAR
   nombre: STRING;
@@ -159,8 +160,9 @@ Ideal para fines educativos, depuración de gramáticas o validación de program
   WRITELN('Hola, ', nombre, '! Tienes ', edad, ' años.');
   READKEY;
   END.
+```
 
-
+```
   PROGRAM ContadorFor;
   VAR
   i: INTEGER;
@@ -169,7 +171,8 @@ Ideal para fines educativos, depuración de gramáticas o validación de program
   WRITELN('Número: ', i);
   READKEY;
   END.
-
+```
+ 
 
 
 
