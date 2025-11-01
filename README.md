@@ -1,3 +1,4 @@
+
 # 📚 README - Teoría del Analizador Léxico-Sintáctico para Turbo Pascal
 
 ## 1. Introducción
@@ -52,15 +53,13 @@ El analizador reconoce construcciones típicas de Turbo Pascal, incluyendo:
 ## 4. Herramientas Utilizadas
 
 | Herramienta | Propósito |
-|-----------|----------|
-| **JFlex** | Genera el analizador léxico a partir de un archivo `.flex` |
-| **CUP** | Genera el parser a partir de un archivo `.cup` con reglas gramaticales |
-| **Java** | Lenguaje de implementación |
-| **Swing** | Interfaz gráfica de usuario |
+|------------|-----------|
+| **JFlex**  | Genera el analizador léxico a partir de un archivo `.flex` |
+| **CUP**    | Genera el parser a partir de un archivo `.cup` con reglas gramaticales |
+| **Java**   | Lenguaje de implementación |
+| **Swing**  | Interfaz gráfica de usuario |
 
-
-===============================================================================
-
+---
 
 # ▶️ README - Funcionamiento del Programa
 
@@ -73,8 +72,6 @@ La aplicación **InterfazAnalizador** es una herramienta gráfica que permite:
 
 Ideal para fines educativos, depuración de gramáticas o validación de programas Pascal simples.
 
----
-
 ## 2. Requisitos
 - **Java 11 o superior**
 - Archivos generados por JFlex y CUP ya compilados en el proyecto:
@@ -82,22 +79,18 @@ Ideal para fines educativos, depuración de gramáticas o validación de program
   - `AnalizadorSintactico.java`
   - `sym.java` (definición de símbolos/tokens)
 
----
-
 ## 3. Interfaz de Usuario
 
 ### 🖥️ Componentes principales
 
 | Elemento | Función |
-|--------|--------|
+|---------|---------|
 | **Área de código fuente** | Editor donde se pega o carga el código Pascal |
 | **Botón "Abrir archivo"** | Permite seleccionar un archivo `.pas` o `.txt` |
 | **Botón "Analizar"** | Inicia el proceso de análisis léxico-sintáctico |
 | **Panel de salida** | Muestra mensajes del sistema (`System.out`, errores, etc.) |
 | **Panel de resultado final** | Muestra la salida del parser (ej. AST serializado) |
 | **Barra de estado** | Indica el estado actual: "Listo", "Analizando...", "✅ Éxito", "❌ Error" |
-
----
 
 ## 4. Flujo de Ejecución
 1. **Carga de código**:
@@ -121,62 +114,56 @@ Ideal para fines educativos, depuración de gramáticas o validación de program
 
 ---
 
-## 5. Ejemplo de Uso
-1. Abrir un archivo como:
-   ```pascal
-   
-   program Hola;
-   begin
-     writeln('Hola mundo');
-   end.
+## 🧪 Ejemplos de Programas en Turbo Pascal
 
+### 1. Hola Mundo
+```pascal
+program Hola;
+begin
+  writeln('Hola mundo');
+end.
+```
 
-  ```
-  PROGRAM AreaCirculo;
-  CONST
+### 2. Cálculo del Área de un Círculo
+```pascal
+PROGRAM AreaCirculo;
+CONST
   PI = 3.1416;
-  VAR
+VAR
   radio, area: REAL;
-  BEGIN
+BEGIN
   WRITE('Radio: ');
   READLN(radio);
   area := PI * radio * radio;
   WRITELN('Área: ', area);
   READKEY;
-  END.
-
-
+END.
 ```
-```
-  PROGRAM SalidaMultiple;
-  VAR
+
+### 3. Entrada y Salida Múltiple
+```pascal
+PROGRAM SalidaMultiple;
+VAR
   nombre: STRING;
   edad: INTEGER;
-  BEGIN
+BEGIN
   WRITE('Nombre: ');
   READLN(nombre);
   WRITE('Edad: ');
   READLN(edad);
   WRITELN('Hola, ', nombre, '! Tienes ', edad, ' años.');
   READKEY;
-  END.
+END.
 ```
 
-```
-  PROGRAM ContadorFor;
-  VAR
+### 4. Contador con Bucle FOR
+```pascal
+PROGRAM ContadorFor;
+VAR
   i: INTEGER;
-  BEGIN
+BEGIN
   FOR i := 1 TO 5 DO
-  WRITELN('Número: ', i);
+    WRITELN('Número: ', i);
   READKEY;
-  END.
+END.
 ```
- 
-
-
-
-
-
-
- 
