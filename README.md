@@ -167,3 +167,18 @@ BEGIN
   READKEY;
 END.
 ```
+
+### 5. Multiples Librerias
+```pascal
+PROGRAM Matematicas;
+USES Crt, Math;
+VAR
+x, raiz: REAL;
+BEGIN
+WRITE('Número positivo: ');
+READLN(x);
+raiz := sqrt(x);
+WRITELN('Raíz cuadrada: ', raiz);
+READKEY;
+END.
+
