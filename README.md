@@ -1,4 +1,4 @@
-# 📄 Analizador Léxico-Sintáctico Turbo Pascal
+# 📄 Analizador Léxico-Sintáctico Turbo Pascal Guia de Uso 
 
 Este proyecto implementa un **analizador léxico y sintáctico** para código Turbo Pascal, utilizando **JFlex** y **CUP**.  
 Incluye dos modos de ejecución: **Terminal** y **Interfaz Gráfica (GUI)**.
