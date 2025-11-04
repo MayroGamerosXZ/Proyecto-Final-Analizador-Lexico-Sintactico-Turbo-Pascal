@@ -40,10 +40,10 @@ Opcion:
 ### 🔹 Opción 2: **Ejecutar**
 - **Qué hace:** Abre el modo interactivo para analizar código fuente.
 - **Cómo funciona:**
-  - Ingresa el nombre del archivo `.txt` o `.pas` que contiene el código.
+  - Ingresa el nombre del archivo `.txt` o `.pas` que contiene el código. 
   - Ejemplo:
     ```
-    ejemplos/caso5.txt
+    ejemplos/caso5.txt   (En este Proyecto el archivo de uso es programa.txt)
     ```
   - El programa mostrará:
     - Tokens reconocidos: `[Tipo] Valor | Línea:Col`
